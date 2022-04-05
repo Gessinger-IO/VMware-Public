@@ -1,4 +1,4 @@
-
+REM random write 100% 
 DiskSpd.exe -c10G -d180 -r -w100 -t7 -o32 -b8K -h -L E:\testfile-1.dat > result-random-w100-8k.txt
 
 DiskSpd.exe -c10G -d180 -r -w100 -t7 -o32 -b32K -h -L E:\testfile-2.dat > result-random-w100-32k.txt
@@ -9,8 +9,7 @@ DiskSpd.exe -c10G -d180 -r -w100 -t7 -o32 -b128K -h -L E:\testfile-4.dat > resul
 
 DiskSpd.exe -c10G -d180 -r -w100 -t7 -o32 -b256K -h -L E:\testfile-5.dat > result-random-w100-256k.txt
 
-
-
+REM random read 100%
 DiskSpd.exe -c10G -d180 -r -w0 -t7 -o32 -b8K -h -L E:\testfile-6.dat > result-random-r100-8k.txt
 
 DiskSpd.exe -c10G -d180 -r -w0 -t7 -o32 -b32K -h -L E:\testfile-7.dat > result-random-r100-32k.txt
@@ -21,8 +20,7 @@ DiskSpd.exe -c10G -d180 -r -w0 -t7 -o32 -b128K -h -L E:\testfile-9.dat > result-
 
 DiskSpd.exe -c10G -d180 -r -w0 -t7 -o32 -b256K -h -L E:\testfile-10.dat > result-random-r100-256k.txt
 
-
-
+REM sequential write 100%
 DiskSpd.exe -c10G -d180 -s -w100 -t7 -o32 -b8K -h -L E:\testfile-11.dat > result-seq-w100-8k.txt
 
 DiskSpd.exe -c10G -d180 -s -w100 -t7 -o32 -b32K -h -L E:\testfile-12.dat > result-seq-w100-32k.txt
@@ -33,8 +31,7 @@ DiskSpd.exe -c10G -d180 -s -w100 -t7 -o32 -b128K -h -L E:\testfile-14.dat > resu
 
 DiskSpd.exe -c10G -d180 -s -w100 -t7 -o32 -b256K -h -L E:\testfile-15.dat > result-seq-w100-256k.txt
 
-
-
+REM sequential read 100%
 DiskSpd.exe -c10G -d180 -s -w0 -t7 -o32 -b8K -h -L E:\testfile-16.dat > result-seq-r100-8k.txt
 
 DiskSpd.exe -c10G -d180 -s -w0 -t7 -o32 -b32K -h -L E:\testfile-17.dat > result-seq-r100-32k.txt
@@ -45,27 +42,24 @@ DiskSpd.exe -c10G -d180 -s -w0 -t7 -o32 -b128K -h -L E:\testfile-19.dat > result
 
 DiskSpd.exe -c10G -d180 -s -w0 -t7 -o32 -b256K -h -L E:\testfile-20.dat > result-seq-r100-256k.txt
 
+REM random mixed 20% write 80% read 
+DiskSpd.exe -c10G -d180 -r -w20 -t7 -o32 -b8K -h -L E:\testfile-21.dat > result-random-mixed20-80-8k.txt
+				 
+DiskSpd.exe -c10G -d180 -r -w20 -t7 -o32 -b32K -h -L E:\testfile-22.dat > result-random-mixed20-80-32k.txt
+				 
+DiskSpd.exe -c10G -d180 -r -w20 -t7 -o32 -b64K -h -L E:\testfile-23.dat > result-random-mixed20-80-64k.txt
+				 
+DiskSpd.exe -c10G -d180 -r -w20 -t7 -o32 -b128K -h -L E:\testfile-24.dat > result-random-mixed20-80-128k.txt
+				 
+DiskSpd.exe -c10G -d180 -r -w20 -t7 -o32 -b256K -h -L E:\testfile-25.dat > result-random-mixed20-80-256k.txt
 
-
-DiskSpd.exe -c3G -d180 -r -w20 -t7 -o32 -b8K -h -L E:\testfile-21.dat > result-random-mixed20-80-8k.txt
+REM random sequential 20% write 80% read
+DiskSpd.exe -c10G -d180 -s -w20 -t7 -o32 -b8K -h -L E:\testfile-26.dat > result-seq-mixed20-80-8k.txt
 				 
-DiskSpd.exe -c3G -d180 -r -w20 -t7 -o32 -b32K -h -L E:\testfile-22.dat > result-random-mixed20-80-32k.txt
+DiskSpd.exe -c10G -d180 -s -w20 -t7 -o32 -b32K -h -L E:\testfile-27.dat > result-seq-mixed20-80-32k.txt
 				 
-DiskSpd.exe -c3G -d180 -r -w20 -t7 -o32 -b64K -h -L E:\testfile-23.dat > result-random-mixed20-80-64k.txt
+DiskSpd.exe -c10G -d180 -s -w20 -t7 -o32 -b64K -h -L E:\testfile-28.dat > result-seq-mixed20-80-64k.txt
 				 
-DiskSpd.exe -c3G -d180 -r -w20 -t7 -o32 -b128K -h -L E:\testfile-24.dat > result-random-mixed20-80-128k.txt
+DiskSpd.exe -c10G -d180 -s -w20 -t7 -o32 -b128K -h -L E:\testfile-29.dat > result-seq-mixed20-80-128k.txt
 				 
-DiskSpd.exe -c3G -d180 -r -w20 -t7 -o32 -b256K -h -L E:\testfile-25.dat > result-random-mixed20-80-256k.txt
-
-
-
-
-DiskSpd.exe -c3G -d180 -s -w20 -t7 -o32 -b8K -h -L E:\testfile-16.dat > result-seq-mixed20-80-8k.txt
-				 
-DiskSpd.exe -c3G -d180 -s -w20 -t7 -o32 -b32K -h -L E:\testfile-17.dat > result-seq-mixed20-80-32k.txt
-				 
-DiskSpd.exe -c3G -d180 -s -w20 -t7 -o32 -b64K -h -L E:\testfile-18.dat > result-seq-mixed20-80-64k.txt
-				 
-DiskSpd.exe -c3G -d180 -s -w20 -t7 -o32 -b128K -h -L E:\testfile-19.dat > result-seq-mixed20-80-128k.txt
-				 
-DiskSpd.exe -c3G -d180 -s -w20 -t7 -o32 -b256K -h -L E:\testfile-20.dat > result-seq-mixed20-80-256k.txt
+DiskSpd.exe -c10G -d180 -s -w20 -t7 -o32 -b256K -h -L E:\testfile-30.dat > result-seq-mixed20-80-256k.txt
