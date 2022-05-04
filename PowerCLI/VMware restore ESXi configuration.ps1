@@ -1,6 +1,6 @@
 ﻿<#
 Restore ESXi configuration 
-                 
+!!! Important !!! ESXi take a reboot !!!                 
 Christian Kremer - 04052022
 #>
 
