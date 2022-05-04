@@ -8,11 +8,11 @@ write-host "Specify local backup destination path" -ForegroundColor Green
 $Path= Read-Host "Enter backup destination path on your local device" 
 
 
-write-host "Specify ESXi IP" -ForegroundColor Green 
-$ESXiHost= Read-Host "Enter your ESXi IP" 
+write-host "Specify vCenter FQDN or ESXi IP Adress" -ForegroundColor Green 
+$vENV= Read-Host "Enter your vCenter FQDN or ESXi IP Adress" 
 
 
-write-host "Connecting to Host" -ForegroundColor Green
-Connect-VIServer $ESXiHost
+write-host "Connecting to vCenter or Host" -ForegroundColor Green
+Connect-VIServer $vENV
 
 Get-VMHost | Get-VMHostFirmware -BackupConfiguration -DestinationPath $Path
