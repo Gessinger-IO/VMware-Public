@@ -1,9 +1,15 @@
-﻿<#
-Restore ESXi configuration 
-!!! Important !!! ESXi take a reboot !!!                 
-Christian Kremer - 04052022
-#>
+﻿<#    
+Script Name:			VMware restore ESXi configuration.ps1
+Description:			Intern service script for Christian Kremer 
+Data:					15/Jul/2022
+Version:				1.0
+Author:					Christian Kremer
+Email:					christian@kremer.systems
 
+Restore ESXi configuration 
+!!! Important !!! ESXi take a reboot !!!     
+
+#> 
 write-host "Specify local backup destination path and the config file" -ForegroundColor Green 
 $Path= Read-Host "Enter backup destination path on your local device" 
 

@@ -1,10 +1,17 @@
-﻿<#
-Enable SSH and ESXi shell on all hosts
+﻿<#    
+Script Name:			ShowVMBiosUUID.ps1
+Description:			Intern service script for Christian Kremer 
+Data:				15/Jul/2022
+Version:			1.0
+Author:				Christian Kremer
+Email:				christian@kremer.systems
 
 TSM >>> ESXi Shell              
-TSM-SSH >>> SSH                            
-Christian Kremer - 02032022
-#>
+TSM-SSH >>> SSH         
+
+
+#> 
+
 
 #Add vCenter FQDN
 $vCenterFQDN="vCenterFQDN"

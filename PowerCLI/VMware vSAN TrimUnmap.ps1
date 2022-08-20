@@ -1,8 +1,17 @@
-﻿<#
-Set Trim/Unmap state at your vsan cluster
-                 
-Christian Kremer - 02032022
-#>
+﻿<#    
+Script Name:			VMware vSAN TrimUnmap.ps1
+Description:			Intern service script for Christian Kremer 
+Data:				15/Jul/2022
+Version:			1.0
+Author:				Christian Kremer
+Email:				christian@kremer.systems
+
+Set vSAN Trim/Unmap
+
+https://vi-universe.blogspot.com/2022/02/provisioning-ist-eine-moglichkeit.html
+
+#> 
+
 
 
 write-host "Specify vCenter FQDN" -ForegroundColor Green 
