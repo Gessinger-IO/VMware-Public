@@ -1,6 +1,6 @@
 ﻿<#    
-Script Name:			ShowVMBiosUUID.ps1
-Description:			Intern service script for Christian Kremer 
+Script Name:		ShowVMBiosUUID.ps1
+Description:		Intern service script for Christian Kremer 
 Data:				15/Jul/2022
 Version:			1.0
 Author:				Christian Kremer

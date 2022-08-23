@@ -1,10 +1,10 @@
 ﻿<#    
 Script Name:		Vmware vSphere-vDoc.ps1
 Description:		Intern service script for Christian Kremer 
-Data:				15/Jul/2022
-Version:			1.0
-Author:				Christian Kremer
-Email:				christian@kremer.systems
+Data:			15/Jul/2022
+Version:		1.0
+Author:			Christian Kremer
+Email:			christian@kremer.systems
 #> 
 
 
