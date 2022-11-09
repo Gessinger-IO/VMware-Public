@@ -108,5 +108,5 @@ foreach ($file in $csvFiles)
 
     $baseName = [System.IO.Path]::GetFileNameWithoutExtension($file.Name)
     
-    Import-Csv -Delimiter "," $fileInfo.FullName | ConvertTo-Html -Head $css -Body "<h2>vDOC-Export-SBIT-AG - Christian Kremer</h2>`n<h5>Generated on $(Get-Date)" | Out-File "$ExportPath\$baseName.html" 
+    Import-Csv -Delimiter "," $fileInfo.FullName | ConvertTo-Html -Head $css -Body "<h2>vDocumentation - Christian Kremer</h2>`n<h5>Generated on $(Get-Date)" | Out-File "$ExportPath\$baseName.html" 
 }
