@@ -1,6 +1,6 @@
 <#    
-Script Name:		vSphere-vDoc.ps1
-Description:		Intern service script for Christian Kremer  Clone-VSS.ps1 -s [the name of the ESX host to copy the vSwitch from] -v [the name of the vSwitch to copy] -d [the name of the ESX host to copy the vSwitch to]
+Script Name:			Migrationstool_vSphere-StandardSwitch.ps1
+Description:			Intern service script for Christian Kremer  Clone vSS from a esxi to a another esxi
 Data:				21/Okt/2022
 Version:			1.0
 Author:				Christian Kremer
