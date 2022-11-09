@@ -9,7 +9,7 @@ Email:				christian@kremer.systems
 
 
 #General Vars
-[string]$vcsafqdn = read-host -Promt "Enter the VCSA FQDN"
+[string]$vcsafqdn = read-host -Prompt "Enter the VCSA FQDN"
 [string]$sourceHostString = read-host -Prompt "Enter the source Host"
 [string]$sourceVSwitchString = read-host -Prompt "Enter the Source Standard Virtual Switch"
 [string]$destinationHostString = read-host -Prompt "Enter the Destination Host"
